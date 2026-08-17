@@ -649,7 +649,7 @@ async function handle(req, res) {
   const requestUrl =
     new URL(
       req.url,
-      `http://${req.headers.host}`
+      `https://${req.headers.host}`
     );
 
   const pathname =
@@ -678,7 +678,7 @@ async function handle(req, res) {
 
     return res.end(
       configurationPage(
-        `http://${req.headers.host}`
+        `https://${req.headers.host}`
       )
     );
   }
